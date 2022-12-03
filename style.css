@@ -20,13 +20,16 @@ body {
 }
 
 .panel {
+  background-size: cover; 
+  background-repeat: no-repeat;  
+  background-position: center;
   position: relative;
   flex: 0.5; 
   margin: 10px; 
   height: 70vh; 
   border-radius: 15px;
   cursor: pointer;
-  transition: all 900ms ease-in; 
+  transition: all 900ms ease-in-out; 
 }
 
 .panel.active {
@@ -46,3 +49,20 @@ body {
   transition: opacity 0.7s ease-in 0.4s; 
 }
 
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; 
+    height: 70vh;
+  }
+
+  .panel {
+    height: 100%; 
+    width: auto; 
+  }
+
+  .panel.active {
+    flex: 8; 
+  }
+}
