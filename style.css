@@ -25,6 +25,7 @@ body {
   margin: 10px; 
   height: 70vh; 
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .panel.active {
