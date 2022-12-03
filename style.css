@@ -26,10 +26,11 @@ body {
   height: 70vh; 
   border-radius: 15px;
   cursor: pointer;
+  transition: all 900ms ease-in; 
 }
 
 .panel.active {
-  flex: 5
+  flex: 5; 
 }
 
 .panel h3 {
@@ -42,5 +43,6 @@ body {
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.7s ease-in 0.4s; 
 }
 
